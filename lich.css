@@ -1,0 +1,41 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+@font-face {
+    font-family: Italic-lich;
+    src: url(../fonts/static/playfairdisplay-italic.ttf);
+    font-weight: 400;
+}
+body {
+    background-color: #000;
+}
+.layers {
+    perspective: 1000px;
+    overflow: hidden;
+}
+.layers__container {
+    height: 100vh;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+}
+
+.layers__item {
+    position: absolute;
+    top: -4vw;
+    left: -7vw;
+    right: -7vw;
+    bottom: -4vw;
+    background-size: cover;
+    background-position: center;
+}
+.layer-1 {
+    transform: translateZ(0);
+}
+.layer-2 {
+    transform: translateZ(80px);
+}.layer-3 {
+    transform: translateZ(180px);
+}

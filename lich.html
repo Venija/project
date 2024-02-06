@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="RU-ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Lich</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="lich.css">
+    <script src="lich.js"></script>
+    <script src="snow.js"></script>
+</head>    
+<body>
+    <section class="layers">
+        <div class="layers__container">
+            <div class="layers__item layer-1" style="background-image: url(лич.jpg);"></div>
+            <div class="layers__item layer-2">
+                <button class="button-start">Испытать, свою удачу</button>
+            </div>
+            <div class="layers__item layer-3">
+                <canvas class="snow"></canvas>
+            </div>
+        </div>
+
+    </section>
+    
+    <div style="height: 100vh;"></div>
+    
+    
+    
+   
+    
+    
+    
+    
+  
+<script src="/snow/snowfall.jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+		$(document).snowfall({
+			flakeCount: 500 // Количество снежинок
+		});
+	});
+
+</script>  
+ 
+</body>
