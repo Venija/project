@@ -36,6 +36,45 @@ body {
 }
 .layer-2 {
     transform: translateZ(80px);
+    margin-top: 6%;
+    margin-left: 10%;
 }.layer-3 {
     transform: translateZ(180px);
+    pointer-events: none;
+}
+.header-line {
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    margin-left: 30px;
+}
+.navigation-item {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.navigation-item:hover {
+    color: darkred;
+}
+
+.navigation__button {
+    margin-left: 38%;
+    background-color: rgb(24, 196, 47);
+    color: #000;
+    border-radius: 10px;
+    padding: 5px;
+}
+.online-counter {
+display: flex;
+margin: 10px;
+}
+.online-counter__text {
+color: #fff;
+margin-right: 10px;
+}
+.online-counter__count {
+color: rgb(0, 228, 11);
+
 }
